@@ -13,10 +13,6 @@ const bodyparser = new BodyParser();
 app.use(bodyparser);
 app.use(router.routes());
 
-app.use(async (ctx) => {
-  ctx.body = "Hello World";
-});
-
 app.listen(serverPort, () => {
   console.log(`Server listening port ${serverPort}.`);
 });
